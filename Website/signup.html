@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .card {
+            width: 700px;
+            padding: 50px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        h2 {
+            margin-top: 0;
+            text-align: center;
+            color: #333;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+            flex: 1;
+            margin-right: 20px;
+        }
+        
+        label {
+            font-weight: bold;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        #save_btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #337ab7;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        #save_btn:hover {
+            background-color: #23527c;
+        }
+        
+        .card .image-container {
+            flex: 1;
+        }
+        
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Sign up</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div>
+                <h2>Sign up</h2>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Enter your password" required>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" onclick="saveData()" id="save_btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="image-container">
+                <img src="OIP (1).jfif" alt="Background Image" style="height: 300px; width: 400px;">
+            </div>
+        </div>
+    </div>
+    <script>
+        function saveData() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+
+            let user_records = JSON.parse(localStorage.getItem("users")) || [];
+
+            if (user_records.some((v) => v.email === email)) {
+                alert("Duplicate Data");
+            } else {
+                user_records.push({
+                    "name": name,
+                    "email": email,
+                    "password": password
+                });
+                localStorage.setItem("users", JSON.stringify(user_records));
+                window.location.href = "login.html";
+            }
+        }
+    </script>
+</body>
+</html>

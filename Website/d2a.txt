@@ -1,0 +1,16 @@
+MySQL SELECT: The SELECT statement is used to select data from a database.
+MySQL WHERE: The WHERE clause is used to filter records and locate specific data.
+MySQL AND, OR, NOT: The WHERE clause can be combined with AND, OR, and NOT operators. The AND and OR operators are used to filter records based on more than one condition The NOT operator displays a record if the condition(s) is NOT TRUE.
+MySQL DELETE: The DELETE statement is used to delete existing records in a table.
+MySQL LIMIT: The LIMIT clause is used to specify the number of records to return.
+MySQL MIN and MAX: The MIN & MAX function return smallest and largest value respectively.
+Database Security and Administration:Importance of data security and access control in databases Roles and responsibilities of database administrators (DBAs)
+MySQL COUNT, AVG, SUM: The COUNT,AVG & SUM function return number of rows,average of rows and sum of rows respectively.
+MySQL BETWEEN: The BETWEEN operator selects values within a given range. The values can be numbers, text, or dates.
+MySQL Aliases: An alias(alternative) is created with the AS keyword.
+MySQL LIKE: The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.
+MySQL Wildcards: A wildcard character is used to substitute one or more characters in a string.
+MySQL IN: The IN operator allows you to specify multiple values in a WHERE clause.
+MySQL ORDER BY: The ORDER BY keyword is used to sort the result-set in ascending or descending order.
+MySQL INSERT INTO: The INSERT INTO statement is used to insert new records in a table.
+MySQL UPDATE: The UPDATE statement is used to modify the existing records in a table.

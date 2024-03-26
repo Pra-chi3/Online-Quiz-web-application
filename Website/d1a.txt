@@ -1,0 +1,12 @@
+Basics of Database management system
+
+1.Introduction to Databases:Definition of a database and its importance Benefits of using a database system
+2.Data Models:
+Overview of data models: hierarchical, network, relational, and object-oriented
+Explanation of the relational model and its key concepts: tables, rows, and columns
+3.Relational Database Management Systems (RDBMS):Introduction to RDBMS and its role in managing relational databases Commonly used RDBMS examples: Oracle, MySQL, SQL Server
+4.Database Design:Importance of proper database design for data integrity and efficiency Entity-Relationship (ER) modeling and normalization techniques
+5.Structured Query Language (SQL):Introduction to SQL and its role in interacting with databases Basic SQL commands: SELECT, INSERT, UPDATE, DELETE
+6.Data Manipulation Language (DML) and Data Definition Language (DDL): Explanation of DML and its commands for data retrieval, modification, and deletion Overview of DDL and its commands for creating, modifying, and deleting database structures
+7.Database Security and Administration:Importance of data security and access control in databases Roles and responsibilities of database administrators (DBAs)
+8.Database Backup and Recovery:Strategies for backing up and restoring databases Importance of regular backups for data protection

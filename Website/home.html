@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 1cm;
+        }
+
+        p {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .navbar li {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .navbar li a {
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover {
+            background-color: #111;
+        }
+
+        .image {
+            text-align: center;
+            width: 100%;
+        }
+
+        .rectangle {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            display: inline-block;
+            width: 450px;
+            margin: 10px;
+            box-sizing: border-box;
+        }
+
+        select option {
+            color: #fff;
+        }
+
+        .navbar li select {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 6px 12px;
+            font-size: 16px;
+            line-height: 0.2;
+            margin-top: 0px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .about-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+        }
+
+        .about-text {
+            width: 60%;
+            text-align: left;
+        }
+
+        .about-image {
+            width: 40%;
+            text-align: right;
+        }
+
+        .about-image img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<script>
+    $(document).ready(function () {
+        $('select').change(function () {
+            var selectedValue = $(this).val();
+            if (selectedValue) {
+                window.location.href = selectedValue;
+            }
+        });
+    });
+</script>
+
+<body>
+<div class="navbar">
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="http://localhost:8090/contact/">Contact</a></li>
+        <li>
+            <select name="" id="" style="color: #fff;">
+                <option value="">Categories</option>
+                <option value="#db">Database Management System</option>
+                <option value="#los">Linux</option>
+            </select>
+        </li>
+    </ul>
+</div>
+
+<div style="background-image: url('OIP.jfif');">
+    <center>
+        <br>
+        <article style="background-color: rgb(255, 255, 255,0.8);">
+            <h1>Welcome to PR Quiz</h1>
+            <h5>
+                <p>Exercise your brain with these interesting</p>
+                <p>quizzes and puzzles; win points, badges,</p>
+                <p>prizes and impress your friends & collegues!</p>
+            </h5>
+        </article>
+        <br> <br>
+    </center>
+</div>
+
+<div class="container mt-4" style="border-radius:5cm;">
+    <h4 id="db">Database Management and System</h4>
+    <div class="row mt-4">
+        <div class="rectangle" style="background-color:aliceblue;">
+            <h5>Simple</h5>
+            <p>Basic concepts of database
+                <ol>
+                    <li>Data Base</li>
+                    <li>Data Models</li>
+                    <li>Data Language</li>
+                </ol>
+                <a href="learn1a.html">
+                    <button type="button" class="btn btn-primary">Start</button>
+                </a>
+        </div>
+        <div class="rectangle" style="background-color:aliceblue;">
+            <h5>Medium</h5>
+            <p>Concepts of MYSQL queries
+                <ol>
+                    <li>SELECT</li>
+                    <li>CLAUSE</li>
+                    <li>ORDER BY</li>
+                </ol>
+            </p>
+            <a href="learn2a.html">
+                <button type="button" class="btn btn-primary">Start</button>
+            </a>
+        </div>
+        <div class="rectangle" style="background-color:aliceblue;">
+            <h5>Hard</h5>
+            <p>Concepts of MYSQL queries
+                <ol>
+                    <li>JOINS</li>
+                    <li>FLOW FUNCTIONS</li>
+                    <li>CONDITION</li>
+                </ol></p>
+            <a href="learn3a.html">
+                <button type="button" class="btn btn-primary">Start</button>
+            </a>
+        </div>
+    </div>
+</div>
+<br>
+<div style="background-color: blanchedalmond;"></div>
+<br>
+<div style="background-color: blanchedalmond ; width: 100%; height: 10vp; color:blanchedalmond">br</div>
+<br>
+<div class="container mt-4" style="border-radius:5cm;">
+    <h4 id="los">Linux OS</h4>
+    <div class="row mt-4">
+        <div class="rectangle" style="background-color:aliceblue;">
+            <h5>Simple</h5>
+            <p>Introduction to linux OS
+                <ol>
+                    <li>Overview of Linux</li>
+                    <li>Basic infomation </li>
+                </ol>
+            </p>
+            <a href="learn1b.html">
+                <button type="button" class="btn btn-primary">Start</button>
+            </a>
+        </div>
+        <div class="rectangle" style="background-color:aliceblue;">
+            <h5>Medium</h5>
+            <p>Linux Commands
+                <ol>
+                    <li>File Management</li>
+                    <li>File Handling</li>
+                </ol>
+            </p>
+            <a href="learn2b.html">
+            <button type="button" class="btn btn-primary">Start</button>
+            </a>
+        </div>
+        <div class="rectangle" style="background-color:aliceblue;">
+            <h5>Hard</h5>
+            <p>Linux Commands
+                <ol>
+                    <li>Networking</li>
+                    <li>System</li>
+                </ol>
+            </p>
+            <a href="learn3b.html">
+            <button type="button" class="btn btn-primary">Start</button>
+        </a>
+        </div>
+    </div>
+</div>
+<br>
+<div style="background-color: blanchedalmond;"></div>
+<br>
+<div style="background-color: blanchedalmond ; width: 100%; height: 10vp; color:blanchedalmond">br</div>
+<br>
+
+<div style="background-color: blanchedalmond ;">
+    <br>
+    <center>
+        <h1 id="about">About Us</h1>
+    </center>
+    <br>
+</div>
+
+
+<br>
+<div class="card" style="display: flex;">
+  <div style="width: 50%; text-align: center; font-size: larger;" >
+      <p>Welcome to our quiz website! We are passionate about providing engaging and educational quizzes for our
+          users. Whether you're looking to test your knowledge or simply have fun, we've got you covered.</p><br>
+      <p>If you have any questions, suggestions, or feedback, please don't hesitate to contact us. We value your
+          input and are constantly looking for ways to improve our platform.</p><br>
+      <p>Thank you for choosing our quiz website!</p>
+  </div>
+  <div class="image-container" style="width: 40%;">
+      <img src="about.jfif" alt="Background Image" style="height: 400px; width: 400px; float: right;">
+  </div>
+</div>
+
+<br> <br> <br><br>
+<div class="footer">
+    <p>© 2023 </p>
+</div>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

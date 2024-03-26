@@ -1,0 +1,17 @@
+MySQL INNER JOIN: The INNER JOIN keyword selects records that have matching values in both tables.
+MySQL RIGHT JOIN: The RIGHT JOIN keyword returns all records from the right table, and the matching records from the left table.
+MySQL LEFT JOIN: The LEFT JOIN keyword returns all records from the left table, and the matching records from the right table.
+MySQL CROSS JOIN: The CROSS JOIN keyword returns all records from both tables
+MySQL Self Join: A self join is a regular join, but the table is joined with itself.
+MySQL MIN and MAX: The MIN & MAX function return smallest and largest value respectively.
+Database Security and Administration:Importance of data security and access control in databases Roles and responsibilities of database administrators (DBAs)
+MySQL UNION: The UNION operator is used to combine the result-set of two or more SELECT statements.
+MySQL GROUP BY: The GROUP BY statement groups rows that have the same values into summary rows.
+MySQL HAVING: The HAVING clause was added to SQL because the WHERE keyword cannot be used with aggregate functions.
+MySQL LIKE: The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.
+MySQL EXISTS: The EXISTS operator is used to test for the existence of any record in the table.
+MySQL ANY, ALL: The ANY and ALL operators allow you to perform a comparison between a single column value and a range of other values.
+MySQL INSERT SELECT: The INSERT INTO SELECT statement copies data from one table and inserts it into another table.
+MySQL CASE: The CASE statement goes through conditions and returns a value based on it (Similar to if else)
+MySQL Null Functions: IFNULL() & COALESCR() function lets you return an alternative value if an expression is NULL.
+MySQL Comments:To ignore the statement by compliler

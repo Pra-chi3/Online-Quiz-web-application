@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <title>Divs with Equal Height using Bootstrap</title>
+  <style>
+    .navbar {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+  
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+  
+    .navbar li {
+      float: left;
+    }
+  
+    .navbar li a {
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+  
+    .navbar li a:hover {
+      background-color: #111;
+    }
+  
+    .container {
+      padding: 20px;
+    }
+  
+    .equal-height {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .equal-height > div {
+      flex: 1;
+    }
+  
+    .div1 {
+      background-color: powderblue;
+      padding: 100px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      margin-right: 10px;
+      font-size: larger;
+    }
+  
+    .div2 {
+      background-color: lightgray;
+      padding: 20px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      margin-left: 10px;
+    }
+  
+    table,
+    th,
+    td,
+    tr {
+      border: 1px solid black;
+      padding: 10px;
+      border-collapse: collapse;
+      height: auto;
+      align-content: center;
+      justify-items: center;
+      margin-right: 100px;
+    }
+  
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+  
+  
+    .buttons-container button {
+      margin-left: 100px;
+      margin-right: 100px;
+      margin: 500px;
+    }
+  
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .button-container button,
+.buttons-container button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+    table {
+      font-family: Arial, sans-serif;
+      width: 100%;
+    }
+
+    th,
+    td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+    }
+
+    tr:nth-child(even) {
+      background-color: lightgray;
+    }
+
+    h1,h2,h3,p,label,
+    .button-container button,
+    .buttons-container button {
+      font-family: Arial, sans-serif;
+    }
+    body > *:not(.navbar):not(.footer) {
+
+    }
+    .question {
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: bold;
+}
+
+  </style>
+  
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+     <li><a href="home.html#about">About</a></li> 
+      <li><a href="http://localhost:8090/contact/">Contact</a></li>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="row equal-height">
+      <div class="col-8 div1">
+        <div id="quiz">
+          <h3 style="font-family: 'Courier New', Courier, monospace; font-weight: bolder;">Linux Quiz</h3>
+          <br><hr><br>
+          <div id="questions" class="question"></div><br>
+          <div class="button-container">
+            <button id="submitButton" onclick="submitAnswer()" style="margin-left: 50px ;" class="btn btn-success">Save</button>
+            <button id="nextButton" onclick="nextQuestion()" style="display: none; margin-left: 300px;" class="btn btn-primary ;">Next</button>
+            <button id="finalSubmitButton" onclick="displayResult()" style="display: none;" class="btn btn-success">Final Submit</button>
+          </div>
+          <div id="result" style="display: none;"></div>
+        </div>
+      </div>
+      <div class="col-4 div2">
+        <h3><div id="timer"></div></h3>
+        <br><hr><br>
+        <table>
+          <tr>
+            <th style="background-color: orange">Unsaved</th>
+            <th style="background-color: white">Unattempted</th>
+            <th style="background-color: green">Saved</th>
+          </tr>
+          <tr>
+            <td id="buttonCount1"></td>
+            <td id="buttonCount2"></td>
+            <td id="buttonCount3"></td>
+          </tr>
+        </table>
+        <hr>
+        <div class="container mr-5">
+        <p><div id="buttons" class="buttons-container"></div></p>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>© 2023 </p>
+  </div>
+  <script src="js2b.js"></script>
+</body>
+</html>

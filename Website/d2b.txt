@@ -1,0 +1,34 @@
+File Management-
+pwd: Display the current working directory.
+mkdir: Create a new directory.
+rmdir: Delete a directory.
+ls: List the contents of a directory.
+cd: Change the current directory.
+
+File Content Manipulation-
+touch: Create empty files.
+cat: Display, create, or copy file content.
+rm: Remove a file.
+cp: Copy a file or directory.
+mv: Move or rename a file or directory.
+
+User Management-
+su: Switch user.
+id: Display user and group IDs.
+useradd: Add a user.
+passwd: Create or change a user's password.
+groupadd: Create a user group.
+
+Filtering Commands-
+grep: Search for specific content within a file.
+cut: Select specific columns from a file.
+sed: Edit files using regular expressions.
+sort: Sort files in alphabetical order.
+uniq: Display unique lines in a sorted file.
+
+Utility Commands-
+find: Search for files within a directory.
+locate: Locate files by their names.
+date: Display date and time information.
+sleep: Pause the execution for a specified time.
+time: Measure the execution time of a command.
